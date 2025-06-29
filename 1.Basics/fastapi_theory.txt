@@ -1,0 +1,4 @@
+Fast api is built over - Starlette and Pydantic
+
+Starlette- manages how our api receives request and send back responses
+Pydantic- is used to check if the data coming to our api is correct and in right format
