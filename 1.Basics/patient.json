@@ -1,112 +1,37 @@
 [
   {
-    "patient_id": "P001",
+    "id": "P001",
     "name": "Amit Sharma",
     "age": 45,
     "gender": "Male",
-    "fasting_glucose_mg_dl": 132,
-    "hba1c_percent": 6.9,
-    "triglycerides_mg_dl": 280,
-    "diagnosis": "Type 2 Diabetes",
-    "medication": ["Metformin", "Saroglitazar"]
+    "diagnosis": "Type 2 Diabetes"
   },
   {
-    "patient_id": "P002",
+    "id": "P002",
     "name": "Priya Mehta",
     "age": 32,
     "gender": "Female",
-    "fasting_glucose_mg_dl": 102,
-    "hba1c_percent": 5.8,
-    "triglycerides_mg_dl": 160,
-    "diagnosis": "Prediabetes",
-    "medication": ["Saroglitazar"]
+    "diagnosis": "Prediabetes"
   },
   {
-    "patient_id": "P003",
+    "id": "P003",
     "name": "Rahul Verma",
     "age": 28,
     "gender": "Male",
-    "fasting_glucose_mg_dl": 95,
-    "hba1c_percent": 5.3,
-    "triglycerides_mg_dl": 130,
-    "diagnosis": "Normal",
-    "medication": []
+    "diagnosis": "Normal"
   },
   {
-    "patient_id": "P004",
+    "id": "P004",
     "name": "Sneha Roy",
     "age": 36,
     "gender": "Female",
-    "fasting_glucose_mg_dl": 115,
-    "hba1c_percent": 6.1,
-    "triglycerides_mg_dl": 240,
-    "diagnosis": "Prediabetes",
-    "medication": ["Saroglitazar"]
+    "diagnosis": "Prediabetes"
   },
   {
-    "patient_id": "P005",
+    "id": "P005",
     "name": "Mohit Singh",
     "age": 51,
     "gender": "Male",
-    "fasting_glucose_mg_dl": 145,
-    "hba1c_percent": 7.3,
-    "triglycerides_mg_dl": 310,
-    "diagnosis": "Type 2 Diabetes",
-    "medication": ["Metformin", "Saroglitazar", "Linagliptin"]
-  },
-  {
-    "patient_id": "P006",
-    "name": "Anjali Gupta",
-    "age": 42,
-    "gender": "Female",
-    "fasting_glucose_mg_dl": 110,
-    "hba1c_percent": 5.9,
-    "triglycerides_mg_dl": 180,
-    "diagnosis": "Prediabetes",
-    "medication": ["Saroglitazar"]
-  },
-  {
-    "patient_id": "P007",
-    "name": "Rakesh Jain",
-    "age": 60,
-    "gender": "Male",
-    "fasting_glucose_mg_dl": 165,
-    "hba1c_percent": 8.2,
-    "triglycerides_mg_dl": 350,
-    "diagnosis": "Type 2 Diabetes",
-    "medication": ["Insulin", "Saroglitazar"]
-  },
-  {
-    "patient_id": "P008",
-    "name": "Nisha Kulkarni",
-    "age": 39,
-    "gender": "Female",
-    "fasting_glucose_mg_dl": 89,
-    "hba1c_percent": 5.5,
-    "triglycerides_mg_dl": 120,
-    "diagnosis": "Normal",
-    "medication": []
-  },
-  {
-    "patient_id": "P009",
-    "name": "Karan Malhotra",
-    "age": 27,
-    "gender": "Male",
-    "fasting_glucose_mg_dl": 118,
-    "hba1c_percent": 6.0,
-    "triglycerides_mg_dl": 205,
-    "diagnosis": "Prediabetes",
-    "medication": ["Saroglitazar"]
-  },
-  {
-    "patient_id": "P010",
-    "name": "Rekha Yadav",
-    "age": 34,
-    "gender": "Female",
-    "fasting_glucose_mg_dl": 135,
-    "hba1c_percent": 7.0,
-    "triglycerides_mg_dl": 290,
-    "diagnosis": "Type 2 Diabetes",
-    "medication": ["Metformin", "Saroglitazar"]
+    "diagnosis": "Type 2 Diabetes"
   }
 ]

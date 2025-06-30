@@ -2,3 +2,21 @@ Fast api is built over - Starlette and Pydantic
 
 Starlette- manages how our api receives request and send back responses
 Pydantic- is used to check if the data coming to our api is correct and in right format
+
+
+Lession:4
+a)
+Use Path() function when you want:
+
+Validation on path parameters (e.g., min, max, regex)
+Documentation metadata
+Default values
+
+#Using path function in fastapi we can increase the readability of path parameters
+
+b)
+HTTPException is a special built in exception in fastapi used to return custom HTTP error responses
+when something goes wrong with the api(instead of crashing we show these error)
+
+c)
+Query parameter- 
