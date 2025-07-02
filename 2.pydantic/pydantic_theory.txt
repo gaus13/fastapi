@@ -1,0 +1,193 @@
+Pydantic is a data validation library and type validation
+
+Here’s a concise but **powerful list of Pydantic theory notes** that you can keep as your personal **interview-ready cheat sheet**. These cover key concepts and are written in a clear, memorable way, especially for FastAPI/backend development interviews.
+
+---
+
+## 🧠 PYDANTIC KEY THEORY NOTES (For Interviews & Quick Revision)
+
+---
+
+### ✅ 1. What is Pydantic?
+
+> **Pydantic is a Python library for data validation and settings management using Python type hints.**
+> It ensures that input data (e.g., API request body) is correct and converts it to the right types.
+
+---
+
+### ✅ 2. Core Concept: Models = Classes with Types
+
+```python
+from pydantic import BaseModel
+
+class User(BaseModel):
+    name: str
+    age: int
+```
+
+* Inherits from `BaseModel`
+* Automatically **validates** and **parses** input data
+
+---
+
+### ✅ 3. Data Validation & Parsing
+
+```python
+User(name="Alice", age="30")
+# Pydantic will auto-convert '30' (str) to int
+```
+
+Pydantic supports **type coercion** like:
+
+* str to int
+* str to datetime
+* str to bool
+
+---
+
+### ✅ 4. Default Values
+
+```python
+class User(BaseModel):
+    name: str
+    age: int = 18  # default if not provided
+```
+
+---
+
+### ✅ 5. Optional Fields
+
+```python
+from typing import Optional
+
+class User(BaseModel):
+    name: str
+    email: Optional[str] = None
+```
+
+---
+
+### ✅ 6. Nested Models
+
+```python
+class Address(BaseModel):
+    city: str
+    pin: int
+
+class User(BaseModel):
+    name: str
+    address: Address
+```
+
+Supports nested validation out of the box.
+
+---
+
+### ✅ 7. List / Dict Support
+
+```python
+from typing import List, Dict
+
+class User(BaseModel):
+    tags: List[str]
+    scores: Dict[str, int]
+```
+
+---
+
+### ✅ 8. Request Body in FastAPI
+
+```python
+@app.post("/user")
+def create_user(user: User):
+    return user
+```
+
+* FastAPI uses Pydantic to **validate and document** the request body
+* Auto-generates **Swagger UI** based on Pydantic model
+
+---
+
+### ✅ 9. Aliases
+
+```python
+class User(BaseModel):
+    full_name: str = Field(..., alias="fullName")
+```
+
+Use when incoming JSON uses camelCase instead of snake\_case.
+
+---
+
+### ✅ 10. Validators
+
+Use custom validation with `@validator`:
+
+```python
+from pydantic import validator
+
+class User(BaseModel):
+    username: str
+
+    @validator("username")
+    def must_not_be_empty(cls, v):
+        if not v:
+            raise ValueError("Username cannot be empty")
+        return v
+```
+
+---
+
+### ✅ 11. `.dict()`, `.json()`, `.parse_obj()`
+
+```python
+user.dict()      # converts to Python dict
+user.json()      # converts to JSON string
+User.parse_obj({ "name": "Ali", "age": 30 })  # Create from dict
+```
+
+---
+
+### ✅ 12. Immutable Models
+
+```python
+class Config:
+    allow_mutation = False
+```
+
+Set model values to be read-only (e.g., after parsing from database).
+
+---
+
+### ✅ 13. Settings Management (for environment variables)
+
+```python
+from pydantic import BaseSettings
+
+class Settings(BaseSettings):
+    db_url: str
+    secret_key: str
+
+    class Config:
+        env_file = ".env"
+```
+
+
+
+| Concept                 | Why It Matters                           |
+| ----------------------- | ---------------------------------------- |
+| ✅ Type coercion         | Handles dirty/invalid input data cleanly |
+| ✅ `@validator`          | Shows custom business logic skills       |
+| ✅ Nested models         | API structure & scalability              |
+| ✅ `.dict()` / `.json()` | Useful for serialization/deserialization |
+| ✅ BaseSettings          | Shows DevOps/config skills               |
+
+---
+
+
+# 02-07-2025
+1)Emailstr is a built in pydantic func that is used to validate the correct format of a email.
+2)Anyurl is also a built in func for url validation.
+3)Field func in pydantic is used to create custom validation cases
+ It is also used to attach metadata(description) along with the help of Annotated func present in typing module.
+ like you can decide what kind of data you want from the user/client
