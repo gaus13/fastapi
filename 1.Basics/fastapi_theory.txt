@@ -19,4 +19,5 @@ HTTPException is a special built in exception in fastapi used to return custom H
 when something goes wrong with the api(instead of crashing we show these error)
 
 c)
-Query parameter- 
+Query parameter- appended at the end of a URL used to pass additional values to the server in the HTTP request.
+(kya dhundna hai kya filter lagana hai, ye sab written after a ?)

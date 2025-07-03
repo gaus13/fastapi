@@ -191,3 +191,10 @@ class Settings(BaseSettings):
 3)Field func in pydantic is used to create custom validation cases
  It is also used to attach metadata(description) along with the help of Annotated func present in typing module.
  like you can decide what kind of data you want from the user/client
+
+ 4)Field validator is a classmethod (can be operated in two mode before and after)
+In Pydantic v2, the @field_validator decorator supports an optional parameter called mode.
+It controls when the validator runs in the data parsing lifecycle.
+when mode is set to 'before' means Raw input data is got ie, before type coercion and mode 'after' is after type coercion.
+
+5)Model validator: works on whole pydantic model
