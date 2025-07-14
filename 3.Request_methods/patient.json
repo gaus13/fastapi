@@ -1,0 +1,102 @@
+[
+  {
+    "id": "P001",
+    "name": "Arjun Mehta",
+    "age": 28,
+    "gender": "male",
+    "height": 1.75,
+    "weight": 70.5
+  },
+  {
+    "id": "P002",
+    "name": "Priya Sharma",
+    "age": 34,
+    "gender": "female",
+    "height": 1.62,
+    "weight": 60.0
+  },
+  {
+    "id": "P003",
+    "name": "Rahul Verma",
+    "age": 41,
+    "gender": "male",
+    "height": 1.8,
+    "weight": 82.3
+  },
+  {
+    "id": "P004",
+    "name": "Sneha Iyer",
+    "age": 25,
+    "gender": "female",
+    "height": 1.58,
+    "weight": 55.4
+  },
+  {
+    "id": "P005",
+    "name": "Tanmay Desai",
+    "age": 31,
+    "gender": "male",
+    "height": 1.7,
+    "weight": 68.2
+  },
+  {
+    "id": "P006",
+    "name": "Aarav Kapoor",
+    "age": 22,
+    "gender": "male",
+    "height": 1.78,
+    "weight": 73.9
+  },
+  {
+    "id": "P007",
+    "name": "Meera Joshi",
+    "age": 27,
+    "gender": "female",
+    "height": 1.6,
+    "weight": 58.1
+  },
+  {
+    "id": "P008",
+    "name": "Ritika Nair",
+    "age": 30,
+    "gender": "female",
+    "height": 1.68,
+    "weight": 64.7
+  },
+  {
+    "id": "P009",
+    "name": "Kunal Rao",
+    "age": 36,
+    "gender": "male",
+    "height": 1.82,
+    "weight": 79.0
+  },
+  {
+    "id": "P010",
+    "name": "Devika Sen",
+    "age": 29,
+    "gender": "others",
+    "height": 1.65,
+    "weight": 61.3
+  },
+  {
+    "id": "P0011",
+    "name": "strifadfdang",
+    "age": 1,
+    "gender": "male",
+    "height": 1.5,
+    "weight": 10.0,
+    "bmi": 4.44,
+    "verdict": "underweight"
+  },
+  {
+    "id": "P0031",
+    "name": "Gullu",
+    "age": 13,
+    "gender": "male",
+    "height": 1.5,
+    "weight": 10.0,
+    "bmi": 4.44,
+    "verdict": "underweight"
+  }
+]
