@@ -1,0 +1,3 @@
+#This module we are trying to learn how do we serve a ML model using FastAPI.
+
+In fastapi or in general we use POST HTTP method when the client wants to send some data to server. (To create resource or inference a Ml Model )
